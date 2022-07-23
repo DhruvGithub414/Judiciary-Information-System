@@ -13,9 +13,7 @@ const connectDB = require('./server/database/connection.js');
 
 
 dotenv.config({path: '.env'})
-const PORT=process.env.PORT ||3000
-
-
+const PORT = process.env.PORT || 5000;
 connectDB();
 
 app.set('view engine', 'ejs');
@@ -72,6 +70,6 @@ app.post("/login",function(req,res){
 	})
 })
 
-const PORT = process.env.PORT || 5000;
+
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 
