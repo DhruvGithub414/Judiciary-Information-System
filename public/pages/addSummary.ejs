@@ -1,0 +1,78 @@
+<!-- include header -->
+<%- include('../include/header.ejs') %>
+<!-- /include header -->
+
+<link rel="stylesheet" href="./styles/form.css" />
+<body class="hero-anime">
+  <%- include('../include/navbar.ejs') %>
+  <div class="container">
+    <!-- form handling -->
+    <br />
+    <br />
+    <br />
+    <div class="form-title text-center">
+      <div class="box-nav d-flex justify-between">
+        <a href="/summary" class="border-shadow">
+          <span class="text-gradient"
+            ><i class="fas fa-angle-double-left"></i>View Summary</span
+          >
+        </a>
+      </div>
+      <h2 class="text-dark">New Summary</h2>
+    </div>
+    <form action="/api/summarys" method="POST" id="add_user">
+      <div class="form-group">
+        <label for="CIN" class="text-dark">Case No</label>
+        <input type="number" name="CIN" value="" />
+      </div>
+      <div class="form-group">
+        <label for="name" class="text-dark">Case Name</label>
+        <input type="hidden" name="id" value="" />
+        <input type="text" name="cname" value="" placeholder="Enter Name" />
+      </div>
+      <div class="form-group">
+        <label for="name" class="text-dark"> Section</label>
+        <input type="hidden" name="id" value="" />
+        <input
+          type="text"
+          name="section"
+          value=""
+          placeholder="Enter section"
+        />
+      </div>
+      <div class="form-group">
+        <label for="name" class="text-dark">Presiding Judge</label>
+        <input type="hidden" name="id" value="" />
+        <input
+          type="text"
+          name="pjudge"
+          value=""
+          placeholder="Enter judge name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="name" class="text-dark">Defence Lawyer</label>
+        <input type="hidden" name="id" value="" />
+        <input type="text" name="dlawyer" value="" placeholder="Enter lawyer name" />
+      </div>
+
+      <div class="form-group">
+        <label for="name" class="text-dark">Public Prosecutor</label>
+        <input type="hidden" name="id" value="" />
+        <input type="text" name="pprosecutor" value="" placeholder="Enter prosecutor name" />
+      </div>
+
+      <div class="form-group">
+        <label for="name" class="text-dark">Summary</label>
+        <input type="hidden" name="id" value="" />
+        <input type="text" name="csummary" value="" placeholder="Enter summary" />
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn text-dark update">Save</button>
+      </div>
+    </form>
+  </div>
+  <!-- include header -->
+  <%- include('../include/footer.ejs') %>
+  <!-- /include header -->
+</body>

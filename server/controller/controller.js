@@ -30,7 +30,7 @@ exports.create = (req,res)=>{
         .save(user)
         .then(data => {
             //res.send(data)
-            res.redirect('/add');
+            res.redirect('/view');
         })
         .catch(err =>{
             res.status(500).send({
@@ -140,8 +140,8 @@ exports.createJudge = (req,res)=>{
     judge
         .save(judge)
         .then(data => {
-            res.send(data)
-            //res.redirect('/add');
+            // res.send(data)
+            res.redirect('/view');
         })
         .catch(err =>{
             res.status(500).send({
@@ -208,8 +208,8 @@ exports.createSession = (req,res)=>{
     hearing
         .save(hearing)
         .then(data => {
-            res.send(data)
-            
+        // res.send(data)
+        res.redirect('/summary');
         })
         .catch(err =>{
             res.status(500).send({
@@ -278,7 +278,8 @@ exports.createSummary = (req,res)=>{
     summary
         .save(summary)
         .then(data => {
-            res.send(data)
+             // res.send(data)
+             res.redirect('/summary');
             
         })
         .catch(err =>{

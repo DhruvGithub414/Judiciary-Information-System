@@ -19,6 +19,18 @@ exports.addCase=(req,res)=>{
 res.render('pages/addCase');
 }
 
+exports.addJudge=(req,res)=>{
+    res.render('pages/addJudge');
+    }
+
+exports.addSummary=(req,res)=>{
+    res.render('pages/addSummary');
+}
+
+exports.addHearing=(req,res)=>{
+    res.render('pages/addHearing');
+}
+
 exports.update_user = (req, res) =>{
     axios.get('http://localhost:5000/api/users', { params : { id : req.query.id }})
         .then(function(userdata){
