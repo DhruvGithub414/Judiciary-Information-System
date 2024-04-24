@@ -36,6 +36,8 @@ nodemon app.js
 
 
 Team Members:
-- Aadarsh Kumar Singh (B119001)
-- [Adhisikha Patnaik](https://github.com/adhi-2311) (B119003)
-- [Plavani Sahoo](https://github.com/plavani0208) (B119038)
+-  Dhruv Pathak (21JE0311)
+-  Dheemant Dixit (21JE0310)
+-  Dev Radadia (21JE0298)
+-  DR Sai Shashank (21JE0309)
+-  DSVRC (21JE0305)
